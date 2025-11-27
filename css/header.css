@@ -3,7 +3,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; /* corrige alinhamento */
+  align-items: center;
   padding: 38px 48px;
   position: relative;
 }
@@ -14,18 +14,16 @@ header {
   height: 64px;
 }
 
-/* LOGO MOBILE + TABLET */
 .logo-mobile {
   display: block;
 }
 
-/* LOGO DESKTOP (começa escondida) */
 .logo-desktop {
   display: none;
 }
 
 .navigation-menu {
-  margin-top: 0; /* corrige menu caído no mobile */
+  margin-top: 0;
 }
 
 input[type="checkbox"]:checked ~ nav {
@@ -92,7 +90,6 @@ nav {
     height: 64px;
   }
 
-  /* DESKTOP = mostra a logo com texto */
   .logo-mobile {
     display: none;
   }
