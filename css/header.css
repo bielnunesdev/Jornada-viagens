@@ -3,7 +3,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 38px 48px;
   position: relative;
 }
@@ -23,7 +23,7 @@ header {
 }
 
 .navigation-menu {
-  margin-top: 24px;
+  margin-top: 0;
 }
 
 input[type="checkbox"]:checked ~ nav {
@@ -34,6 +34,7 @@ input[type="checkbox"]:checked ~ nav {
   width: 100%;
   background-color: var(--background-color-tertiary);
 }
+
 nav {
   display: none;
 }
@@ -58,18 +59,22 @@ nav {
     margin-top: 0;
     width: 468px;
   }
+
   .navigation-menu label {
     display: none;
   }
+
   .navigation-menu nav {
     display: block;
   }
+
   .navigation-menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
   }
+
   .navigation-menu li {
     margin: 0;
   }
@@ -79,16 +84,18 @@ nav {
   header {
     padding: 38px 120px;
   }
+
   .logo {
     width: 260px;
     height: 64px;
   }
-  .img-desktop {
-    display: block;
+
+  .logo-mobile {
+    display: none;
   }
 
-  .img-mobile {
-    display: none;
+  .logo-desktop {
+    display: block;
   }
 
   .navigation-menu a:hover {
